@@ -77,6 +77,13 @@ import "weather-icons/css/weather-icons.css";
       const country=e.target.elements.country.value;
       const city=e.target.elements.city.value;
 
+      //clear input fields
+     e.target.elements.country.value="";
+     e.target.elements.city.value="";
+
+    //get back typing line focus to city input
+    e.target.city.focus();
+    
      if(country && city){
        try{
        const result=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},q=${country}&appid=${api_key}`);
