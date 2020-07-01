@@ -83,7 +83,7 @@ import "weather-icons/css/weather-icons.css";
 
     //get back typing line focus to city input
     e.target.city.focus();
-    
+
      if(country && city){
        try{
        const result=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},q=${country}&appid=${api_key}`);
@@ -104,7 +104,7 @@ import "weather-icons/css/weather-icons.css";
 
        //set icons
        this.getWeatherIcon(this.weathericon,response.weather[0].id);
-       console.log(this.state.icon);
+       
        console.log(response);
       }catch(error){
         alert('City you are searching is not found!');
