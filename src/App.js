@@ -7,6 +7,7 @@ import "weather-icons/css/weather-icons.css";
 
 //openweathermap.org apikey
  const api_key="12fedfd654ba4fb6479923bec83a0907";
+
  class App extends React.Component{
    constructor(){
      super();
