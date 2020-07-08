@@ -87,7 +87,7 @@ import "weather-icons/css/weather-icons.css";
 
      if(country && city){
        try{
-       const result=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},q=${country}&appid=${api_key}`);
+       const result=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},q=${country}&appid=${api_key}`);
         
        const response=await result.json();
 
